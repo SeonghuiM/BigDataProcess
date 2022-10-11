@@ -47,10 +47,8 @@ for row in ws:
 			ws.cell(row = row_id3, column = 8).value = 'B'
 		elif ws.cell(row = row_id3, column = 8).value <= student_num * 0.85 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'C+'
-		elif ws.cell(row = row_id3, column = 8).value <= student_num - count[row_id3]:
-			ws.cell(row = row_id3, column = 8).value = 'C'
 		else:
-			ws.cell(row = row_id3, column = 8).value = 'F'
+			ws.cell(row = row_id3, column = 8).value = 'C'
 	row_id3 += 1
 
 wb.save("student.xlsx")
