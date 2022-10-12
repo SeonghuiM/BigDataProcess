@@ -37,15 +37,15 @@ for row in ws:
 row_id3 = 1
 for row in ws:
 	if row_id3 != 1:
-		if ws.cell(row = row_id3, column = 8).value <= student_num * 0.15 - count[row_id3]:
+		if ws.cell(row = row_id3, column = 8).value + count[row_id3] <= student_num * 0.15 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'A+'
-		elif ws.cell(row = row_id3, column = 8).value <= student_num * 0.3 - count[row_id3]:
+		elif ws.cell(row = row_id3, column = 8).value + count[row_id3] <= student_num * 0.3 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'A'
-		elif ws.cell(row = row_id3, column = 8).value <= student_num * 0.5 - count[row_id3]:
+		elif ws.cell(row = row_id3, column = 8).value + count[row_id3] <= student_num * 0.5 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'B+'
-		elif ws.cell(row = row_id3, column = 8).value <= student_num * 0.7 - count[row_id3]:
+		elif ws.cell(row = row_id3, column = 8).value + count[row_id3] <= student_num * 0.7 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'B'
-		elif ws.cell(row = row_id3, column = 8).value <= student_num * 0.85 - count[row_id3]:
+		elif ws.cell(row = row_id3, column = 8).value + count[row_id3] <= student_num * 0.85 - count[row_id3]:
 			ws.cell(row = row_id3, column = 8).value = 'C+'
 		else:
 			ws.cell(row = row_id3, column = 8).value = 'C'
