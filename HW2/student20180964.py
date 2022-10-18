@@ -15,7 +15,6 @@ for row in ws:
 	row_id += 1
 # grade
 student_num = row_id - 1
-ws = wb['Sheet1']
 row_id1 = 1
 count = []
 for i in range(student_num + 1):
